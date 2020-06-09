@@ -1,4 +1,5 @@
-﻿using NUglify.JavaScript;
+﻿using System.Diagnostics;
+using NUglify.JavaScript;
 using NUglify.Tests.JavaScript.Common;
 using NUnit.Framework;
 
@@ -8,6 +9,12 @@ namespace NUglify.Tests.JavaScript
     public class Bugs
     {
       
+		[Test]
+        public void Bug35()
+        {
+            TestHelper.Instance.RunErrorTest();
+        }
+
 		[Test]
         public void Bug63()
         {
